@@ -1,1 +1,20 @@
 // Código de Nav acá
+nav {
+  .navMixin;
+}
+
+ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  li {
+    color: black;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: @phone) {
+    width: 90%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
